@@ -4,8 +4,8 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 import tailwindcss from '@tailwindcss/vite' // <-- MUST HAVE THIS
 
 export default defineConfig({
-  // Needed for GitHub Pages: app is served from /clipboardee/
-  base: '/clipboardee/',
+  // Empty base because the site is served from the root of clipboardee.org
+  base: '',
   plugins: [
     tailwindcss(), // <-- AND THIS
     svelte(),

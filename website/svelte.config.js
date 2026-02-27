@@ -9,8 +9,8 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-			// Replace 'your-repo-name' with your actual GitHub repository name
-			base: process.env.NODE_ENV === 'production' ? '/clipboardee' : '',
+			// Empty string because your site is now at the root!
+			base: '',
 		}
 	}
 };
