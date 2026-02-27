@@ -10,7 +10,7 @@ const config = {
 		}),
 		paths: {
 			// Replace 'your-repo-name' with your actual GitHub repository name
-			base: process.env.NODE_ENV === 'production' ? '/your-repo-name' : '',
+			base: process.env.NODE_ENV === 'production' ? '/clipboardee' : '',
 		}
 	}
 };
