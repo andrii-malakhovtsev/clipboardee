@@ -23,9 +23,11 @@
 
 <main class="min-h-screen bg-[#0a0a0c] text-white selection:bg-blue-500/30">
   <nav class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center">
-    <div class="text-xl font-bold tracking-tighter flex items-center gap-2">
+    <div class="text-xl font-bold flex items-center gap-2">
       <span class="bg-blue-600 p-1.5 rounded-lg">📋</span>
-      Clipboardee
+      <span class="leading-none whitespace-nowrap">
+        Clipboard<span class="bg-gradient-to-r from-[#f97316] via-[#fb923c] to-[#facc15] bg-clip-text text-transparent">ee</span>
+      </span>
     </div>
     <div class="flex gap-6 text-sm font-medium text-gray-400">
       <button
