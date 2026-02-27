@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main' # Run this when you push to main
+    branches: 'main'
 
 permissions:
   contents: read
@@ -21,18 +21,22 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+          # Tell GitHub where the package-lock.json is for caching
+          cache-dependency-path: './web/package-lock.json'
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./web
 
       - name: Build
         run: npm run build
+        working-directory: ./web
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          # this should match the build output folder (usually 'build')
-          path: 'build/'
+          # This tells GitHub where the 'build' folder actually is
+          path: 'web/build/'
 
   deploy:
     needs: build_site
