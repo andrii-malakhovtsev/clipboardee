@@ -22,21 +22,21 @@ jobs:
           node-version: 20
           cache: 'npm'
           # Tell GitHub where the package-lock.json is for caching
-          cache-dependency-path: './web/package-lock.json'
+          cache-dependency-path: './website/package-lock.json'
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./web
+        working-directory: ./website
 
       - name: Build
         run: npm run build
-        working-directory: ./web
+        working-directory: ./website
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          # This tells GitHub where the 'build' folder actually is
-          path: 'web/build/'
+          # This tells GitHub where the Vite 'dist' folder actually is
+          path: 'website/dist/'
 
   deploy:
     needs: build_site
