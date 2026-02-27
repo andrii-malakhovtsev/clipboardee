@@ -1,4 +1,4 @@
-# Image Text To Clipboard
+# Clipboardee
 
 ## Dependencies
 
