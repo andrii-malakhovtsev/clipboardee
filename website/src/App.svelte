@@ -80,7 +80,7 @@
       <div class="bg-[#0f0f12] rounded-[23px] overflow-hidden aspect-video flex items-center justify-center border border-white/5 shadow-[0_0_100px_rgba(59,130,246,0.1)]">
         <iframe
           class="w-full h-full"
-          src="https://www.youtube.com/embed/M-4GDEbh8wU?autoplay=1&mute=1&loop=1&playlist=M-4GDEbh8wU"
+          src="https://www.youtube.com/embed/M-4GDEbh8wU?autoplay=1&mute=1&loop=1&playlist=M-4GDEbh8wU&rel=0&modestbranding=1&iv_load_policy=3"
           title="Clipboardee Demo"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
