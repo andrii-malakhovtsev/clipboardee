@@ -52,19 +52,23 @@
     </p>
 
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href={winLink} 
-         class="group w-full sm:w-auto px-8 py-4 font-bold rounded-2xl transition-all flex items-center justify-center gap-3 shadow-2xl
-         {os === 'windows' ? 'bg-white text-black hover:bg-gray-200 scale-105' : 'bg-gray-900 text-white border border-gray-800 hover:border-gray-600'}">
+      <button
+        type="button"
+        on:click={() => alert('Not available yet — coming soon.')}
+        class="group w-full sm:w-auto px-8 py-4 font-bold rounded-2xl transition-all flex items-center justify-center gap-3 shadow-2xl bg-gray-900 text-gray-500 border border-gray-800 cursor-not-allowed"
+      >
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1V11.7H0V3.449zm0 17.1L9.75 21.9V12.3H0v8.249zM10.5 2V11.7H24V0L10.5 2zm0 19.9l13.5 2V12.3H10.5v9.6z"/></svg>
         Download for Windows
-      </a>
+      </button>
 
-      <a href={macLink} 
-         class="group w-full sm:w-auto px-8 py-4 font-bold rounded-2xl transition-all flex items-center justify-center gap-3 shadow-2xl
-         {os === 'mac' ? 'bg-white text-black hover:bg-gray-200 scale-105' : 'bg-gray-900 text-white border border-gray-800 hover:border-gray-600'}">
+      <button
+        type="button"
+        on:click={() => alert('Not available yet — coming soon.')}
+        class="group w-full sm:w-auto px-8 py-4 font-bold rounded-2xl transition-all flex items-center justify-center gap-3 shadow-2xl bg-gray-900 text-gray-500 border border-gray-800 cursor-not-allowed"
+      >
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.057 12.781c.032 2.588 2.246 3.445 2.275 3.457-.022.072-.351 1.205-1.152 2.372-.693 1.012-1.411 2.019-2.544 2.039-1.112.021-1.472-.653-2.743-.653-1.269 0-1.669.633-2.723.674-1.112.039-1.942-1.109-2.64-2.119-1.428-2.067-2.518-5.842-1.047-8.388.73-1.263 2.032-2.063 3.444-2.083 1.074-.021 2.089.721 2.744.721.653 0 1.889-.904 3.161-.773 1.152.126 2.043.619 2.658 1.487-1.428.846-1.173 2.744.02 3.298zm-2.484-7.461c.563-.683.946-1.636.841-2.584-.816.033-1.801.543-2.387 1.226-.525.607-.985 1.583-.861 2.508.911.071 1.844-.467 2.407-1.15z"/></svg>
         Download for macOS
-      </a>
+      </button>
     </div>
 
     <!--
